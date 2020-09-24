@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  shib:
+      build: "./shibboleth"
+      container_name: sb-idp
+  tokens:
+      build: "./shibe"
+      container_name: sb-tkn
